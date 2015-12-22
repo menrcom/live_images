@@ -5,3 +5,7 @@ cache
 chroot.headers
 chroot.packages.install
 chroot
+config/binary
+config/bootstrap
+config/common
+config/source
