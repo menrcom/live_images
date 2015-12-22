@@ -4,8 +4,12 @@ lb config noauto \
    --mode ubuntu \
    --system live \
    -d trusty \
+   --initsystem sysvinit \
+   --syslinux-theme live-build \
    -b netboot \
+   --chroot-filesystem squashfs \
    --archive-areas "main universe multiverse restricted" \
+   --linux-packages "linux-image-4.2.0-22 linux-image-extra-4.2.0-22" \
    --bootappend-live boot=live components fetch=http://api/live_images/trusty/filesystem.squashfs \
    --initramfs live-boot \
    "${@}"
