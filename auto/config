@@ -1,0 +1,11 @@
+#!/bin/sh
+
+lb config noauto \
+   --mode ubuntu \
+   --system live \
+   -d trusty \
+   -b netboot \
+   --archive-areas "main universe multiverse restricted" \
+   --bootappend-live boot=live components fetch=http://api/live_images/trusty/filesystem.squashfs \
+   --initramfs live-boot \
+   "${@}"
