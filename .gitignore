@@ -1,1 +1,7 @@
 *~
+build.log
+cache
+.build
+chroot.headers
+chroot.packages.install
+chroot
