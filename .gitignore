@@ -9,3 +9,11 @@ config/binary
 config/bootstrap
 config/common
 config/source
+binary.contents
+binary.netboot.tar.xz
+binary.packages
+binary/
+chroot.packages.live
+config/packages.binary/
+config/packages.chroot/
+tftpboot/
