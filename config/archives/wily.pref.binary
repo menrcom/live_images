@@ -1,0 +1,7 @@
+PackageL live-*
+Pin: release n=wily
+Pin-Priority: 600
+
+Package: *
+Pin: release n=wily
+Pin-Priority: -1
