@@ -3,11 +3,12 @@
 lb config noauto \
    --mode ubuntu \
    --system live \
+   -b netboot \
    -d trusty \
    --initsystem sysvinit \
    --syslinux-theme live-build \
-   -b netboot \
    --chroot-filesystem squashfs \
+   --apt-options "-oAcquire::ForceIPv4=true" \
    --archive-areas "main universe multiverse restricted" \
    --linux-packages "linux-image-4.2.0-22 linux-image-extra-4.2.0-22" \
    --initramfs live-boot \
