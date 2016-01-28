@@ -1,4 +1,4 @@
-PackageL live-*
+Package: live-*
 Pin: release n=wily
 Pin-Priority: 600
 
