@@ -8,7 +8,7 @@ lb config noauto \
    --initsystem sysvinit \
    --syslinux-theme live-build \
    --chroot-filesystem squashfs \
-   --apt-options "-oAcquire::ForceIPv4=true" \
+   --apt-options "-oAcquire::ForceIPv4=true -y" \
    --archive-areas "main universe multiverse restricted" \
    --linux-packages "linux-image-4.2.0-22 linux-image-extra-4.2.0-22" \
    --initramfs live-boot \
