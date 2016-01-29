@@ -1,4 +1,6 @@
 sysvinit-utils
 gfxboot-theme-ubuntu
+openssh-server
+openssh-client
 puppet
 ceph
