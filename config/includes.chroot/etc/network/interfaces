@@ -5,20 +5,20 @@ auto eth1
 iface eth1 inet dhcp
     post-up ip route replace 192.168.0.0/22 via 10.13.252.201 dev $IFACE
 
-auto p6p2
-iface p6p2 inet manual
+auto eth3
+iface eth3 inet manual
     up ip link set up dev $IFACE
     down ip link set down dev $IFACE
 
-auto p6p2.3900
-iface p6p2.3900 inet manual
+auto eth3.3900
+iface eth3.3900 inet manual
     up ip link set up dev $IFACE
     down ip link set down dev $IFACE
 
-auto p6p2.3902
-iface p6p2.3902 inet dhcp
+auto eth3.3902
+iface eth3.3902 inet dhcp
 
-auto p6p2.3904
-iface p6p2.3904 inet manual
+auto eth3.3904
+iface eth3.3904 inet manual
     up ip link set up dev $IFACE
     down ip link set down dev $IFACE
