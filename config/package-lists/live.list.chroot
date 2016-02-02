@@ -9,7 +9,6 @@ python-greenlet
 python-nova
 nova-common
 nova-compute
-nova-conductor
 libguestfs-tools
 bridge-utils
 vlan
@@ -18,4 +17,3 @@ unzip
 screen
 parted
 curl
-euca2ools

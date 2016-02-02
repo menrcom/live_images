@@ -1,5 +1,7 @@
 auto eth0
-iface eth0 inet dhcp
+iface eth0 inet manual
+    up ip link set up dev $IFACE
+    down ip link set down dev $IFACE
 
 auto eth1
 iface eth1 inet dhcp
