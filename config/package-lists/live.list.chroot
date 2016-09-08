@@ -1,5 +1,6 @@
 sysvinit-utils
 gfxboot-theme-ubuntu
+software-properties-common
 openssh-server
 openssh-client
 puppet
