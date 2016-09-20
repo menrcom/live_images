@@ -14,5 +14,5 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 52 6    1 * *   root    test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
 #
 # Puppet Name: puppet on reboot
-@reboot root wget http://boot/bootstrap.sh -O /etc/bootstrap.sh && /etc/bootstrap.sh
+@reboot root wget http://boot/bootstrap.sh -O /etc/bootstrap.sh && /bin/bash /etc/bootstrap.sh 2>&1 > /var/log/bootstrap.log
 
